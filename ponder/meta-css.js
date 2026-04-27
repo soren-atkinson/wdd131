@@ -25,7 +25,7 @@ console.log(result);
 result = one + Number(two);
 console.log(result)
 
-asdf
+
 
 
 let selectElem = document.getElementById('webdevlist');
