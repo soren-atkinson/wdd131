@@ -22,9 +22,9 @@ let para = document.querySelector('p');
 
 para.style.fontSize = '2em';
 
-para.classList.add('background')
+para.classList.add('background');
 
-const image = document.querySelector("img")
+const image = document.querySelector("img");
 
 image.setAttribute('src', 'images/new_logo.png');
 
@@ -32,7 +32,7 @@ let selectElem = document.getElementById('webdevlist');
 selectElem.addEventListener('change', function(){
     let codeValue = selectElem.value;
     console.log(codeValue);
-})
+});
 
 
 
