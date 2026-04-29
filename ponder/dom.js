@@ -28,10 +28,18 @@ const image = document.querySelector("img");
 
 image.setAttribute('src', 'images/new_logo.png');
 
+const headertwo = document.querySelector('#html');
+const headerthree = document.querySelector('#css');
+const headerfour = document.querySelector('#js');
+
 let selectElem = document.getElementById('webdevlist');
 selectElem.addEventListener('change', function(){
     let codeValue = selectElem.value;
+    headertwo.style.color = "purple"
+    headerthree.style.color = "purple"
+    headerfour.style.color = "purple"
     console.log(codeValue);
+    document.getElementById(codeValue).style.color = 'red'
 });
 
 
