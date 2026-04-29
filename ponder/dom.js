@@ -28,3 +28,12 @@ const image = document.querySelector("img")
 
 image.setAttribute('src', 'images/new_logo.png');
 
+let selectElem = document.getElementById('webdevlist');
+selectElem.addEventListener('change', function(){
+    let codeValue = selectElem.value;
+    console.log(codeValue);
+})
+
+
+
+
