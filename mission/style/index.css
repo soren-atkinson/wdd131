@@ -3,6 +3,24 @@ body {
     font-family: 'BJCree', Arial, sans-serif;
 }
 
+body.dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark p {
+    color: #008fcc;
+}
+
+p {
+    color: #017aae;
+    letter-spacing: 3px;
+    border-bottom: 1px solid rgb(151, 151, 151);
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #Mission-text {
     margin: 25px auto;
     max-width: 800px;
@@ -12,21 +30,14 @@ h1 {
     font-size: 35px;
     letter-spacing: 3px;
     text-align: center;
-}
-
-p {
-    color: #0194d3;
-    letter-spacing: 3px;
-    border-bottom: 1px solid rgb(151, 151, 151);
-    font-size: 15px;
-    text-align: center;
-    margin-bottom: 20px;
+    color: inherit;
 }
 
 h2, h3 {
     text-align: left;
     font-size: 15px;
     font-weight: 600;
+    color: inherit;
 }
 
 h3 {
