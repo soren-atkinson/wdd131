@@ -1,6 +1,5 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@media screen and (min-width: 700px) {
 
 body {
   font-family: Roboto, sans-serif;
@@ -45,5 +44,4 @@ nav a:hover {
 }
 footer {
     text-align: center;
-}
 }
