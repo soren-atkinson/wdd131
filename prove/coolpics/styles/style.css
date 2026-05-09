@@ -1,0 +1,114 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 15px;
+}
+
+
+p {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+nav a {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    display: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-btn {
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+content {
+    text-align: center;
+}
+
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 
+    8px 10px 20px rgba(0, 0, 0, 0.4),   /* strong bottom-right */
+    -2px -2px 6px rgba(0, 0, 0, 0.15);  /* soft top-left */
+    margin: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    padding: 1px;
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+    .images {
+        display: grid;
+        /* Shrink-wraps columns to the image size (2 columns) */
+        grid-template-columns: repeat(2, max-content);
+        
+        /* Centers the 2-column block on the screen */
+        justify-content: center;
+        
+        /* Consistent spacing: 30px between rows AND columns */
+        gap: 10px;
+        
+        column-gap: 60px;
+        padding: 20px 0;
+    }
+    .menu-btn{
+        display: none;
+    }
+    nav a {
+        display: inline;
+    }
+    nav {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .images {
+        display: grid;
+        /* 'max-content' tells the column: "Only be as wide as the image inside you" */
+        grid-template-columns: repeat(3, max-content); 
+        
+        /* This centers the group of images on the screen */
+        justify-content: center; 
+        
+        /* This handles both vertical and horizontal spacing at once */
+        gap: 30px; 
+        
+        padding: 40px 0; /* Adds some breathing room at the top and bottom */
+    }
+}
