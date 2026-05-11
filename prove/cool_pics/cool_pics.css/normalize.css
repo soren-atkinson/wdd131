@@ -195,13 +195,7 @@
   button,
   [type="button"],
   [type="reset"],
-  [type="submit"] {
-    -webkit-appearance: button;
-  }
-  
-  /**
-   * Remove the inner border and padding in Firefox.
-   */
+  [type="submit"] {-webkit-appearance: button;}
   
   button::-moz-focus-inner,
   [type="button"]::-moz-focus-inner,
