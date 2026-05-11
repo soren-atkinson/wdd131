@@ -87,15 +87,6 @@ footer {
         column-gap: 60px;
         padding: 20px 0;
     }
-    .menu-btn{
-        display: none;
-    }
-    nav a {
-        display: inline;
-    }
-    nav {
-        text-align: center;
-    }
 }
 @media screen and (min-width: 1000px) {
     .images {
@@ -110,5 +101,14 @@ footer {
         gap: 30px; 
         
         padding: 40px 0; /* Adds some breathing room at the top and bottom */
+    }
+    .menu-btn{
+        display: none;
+    }
+    nav a {
+        display: inline;
+    }
+    nav {
+        text-align: center;
     }
 }
