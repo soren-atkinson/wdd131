@@ -8,18 +8,16 @@ gallery.addEventListener('click', openModal);
 
 function openModal(e) {
     
-    console.log(e.target);
+    if (e.target.tagName !== 'IMG') return;
 
     const img = e.target;
 
     const src = img.getAttribute('src');
-
     const alt = img.getAttribute('alt');
 
-    const full = src.replace('sm', 'full');
+    const full = src.replace('_sm', '_full');
 
     modalImage.src = full;
-
     modalImage.alt = alt;
 
     modal.showModal();
