@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header, footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+    
+}
+h1 {
+    margin: 0;
+    padding: 0px 0;
+    padding-bottom: 20px;
+    
+}
+nav {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-color: #ff7700;
+    padding: 10px 0;
+}
+.main-nav {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+.main-nav li {
+    padding: 30px;
+    display: inline;
+    text-align: right;
+}
+.main-nav a {
+    color: #910041;
+    text-decoration: none;
+}
+#book-list {
+    padding: 0 2rem;
+}
+
+.book {
+    border-top: 2px solid #ff7700;
+    border-bottom: 2px solid #ff7700;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-top: 50px;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 5.3fr 1fr;
+    justify-content: center;
+}
+.book h2 {
+    color: #910041;
+    font-size: 1.9rem;
+    text-align: left;
+    margin: 0;
+    grid-column: 1/2;
+}
+.book p {
+    padding-right: 5px;
+    margin-top: 0px;
+    text-align: right;
+    grid-column: 2/3;
+}
+.book img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+    grid-column: 1/2;
+}
+#desc {
+    text-align: left;
+    font-size: 23px;
+    grid-column: 1/2;
+}
+
+@media (min-width: 700px) {
+
+
+
+    .book {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .book h2 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        border-left: 2px solid #ff7700;
+        padding-left: 40px;
+    }
+    
+    .book p {
+        grid-column: 1/2;
+        padding-right: 20px;
+    }
+
+    .book img {
+        grid-row: 2/6;
+        grid-column: 2/3;
+        padding-left: 0;
+        margin-left: 0;
+        justify-self: center;
+        align-self: center;
+        border-left: 2px solid #ff7700;
+        padding-left: 200px;
+    }
+    #desc{
+        grid-column: 2/3;
+        border-left: 2px solid #ff7700;
+        padding-left: 40px;
+    }
+}
