@@ -45,16 +45,19 @@ const movies = [
 
   movies.forEach(movie => {
 
-        let html = `<article class="movie">
-            <h2>${movie.title}</h2>
-            <img src=${movie.imgSrc} alt="Miles Morales swinging through the city">
-            <p><strong>Release Date:</strong> ${movie.date}</p>
-            <p><strong>Recommended Age:</strong>${movie.ages}</p>
-            <p><strong>Genre:</strong>${movie.genre}</p>
-            <p><strong>Rating:</strong> <span aria-label="${movie.stars.length} out of 5">${movie.stars}</span></p>
-            <p id='desc'>${movie.description}</p>
-            </article>`
+        const article = document.createElement("article");
+        article.className = 'movie'
 
-            movieList.innerHTML += html;
+        let html = `<h2>${movie.title}</h2>
+                    <img src=${movie.imgSrc} alt="Miles Morales swinging through the city">
+                    <p><strong>Release Date:</strong> ${movie.date}</p>
+                    <p><strong>Recommended Age:</strong>${movie.ages}</p>
+                    <p><strong>Genre:</strong>${movie.genre}</p>
+                    <p><strong>Rating:</strong> <span aria-label="${movie.stars.length} out of 5">${movie.stars}</span></p>
+                    <p id='desc'>${movie.description}</p>`
+
+
+            article.innerHTML = html;
+            movieList.appendChild(article);
 
 });
