@@ -44,8 +44,6 @@ nav {
 }
 
 .book {
-    border-top: 2px solid #ff7700;
-    border-bottom: 2px solid #ff7700;
     padding: 1.5rem;
     border-radius: 10px;
     margin: 20px auto;
@@ -83,6 +81,10 @@ nav {
     grid-column: 1/2;
 }
 
+footer {
+    border-top: 2px solid #ff7700;
+    border-bottom: 2px solid #ff7700;
+}
 @media (min-width: 700px) {
 
 
