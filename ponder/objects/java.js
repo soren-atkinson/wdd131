@@ -4,7 +4,7 @@ const aCourse = {
     name: 'Javascript Language',
     logo: 'images/js-logo.png',
     sections: [
-    { sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'},
+    { sectionNum: 1, roomNum: 'STC 353', enrolled: 2, days: 'TTh', instructor: 'Bro T'},
     { sectionNum: 2, roomNum: 'STC 347', enrolled: 29, days: 'TTh', instructor: 'Sis A'},
     { sectionNum: 3, roomNum: 'STC 356', enrolled: 25, days: 'TTh', instructor: 'Sis S'}
     ],
