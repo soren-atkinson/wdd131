@@ -2,7 +2,7 @@
 const aCourse = {
     code: 'CSE121b',
     name: 'Javascript Language',
-    logo: 'images/js-logo.png',
+    logo: 'js-logo.png',
     sections: [
     { sectionNum: 1, roomNum: 'STC 353', enrolled: 2, days: 'TTh', instructor: 'Bro T'},
     { sectionNum: 2, roomNum: 'STC 347', enrolled: 29, days: 'TTh', instructor: 'Sis A'},
@@ -41,5 +41,6 @@ document.querySelector("#enrollStudent").addEventListener("click", function () {
     aCourse.enrollStudent(sectionNum);
 });
           
-document.querySelector('#courseCode').textContent = aCourse.code
-document.querySelector('#courseName').textContent = aCourse.name
+document.querySelector('#courseCode').textContent = aCourse.code;
+document.querySelector('#courseName').textContent = aCourse.name;
+document.querySelector('img').src = aCourse.logo;
