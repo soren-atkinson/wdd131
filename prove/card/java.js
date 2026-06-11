@@ -24,7 +24,7 @@ function cardTemplate(card) {
     return `
         <article class="card">
 
-            <img class="image" src="${card.img}" alt="${card.name} character card">
+            <img class="image" src="${card.img}" alt="${card.name} character card" fetchpriority="high">
 
             <h2 class="name">${card.name}</h2>
 
