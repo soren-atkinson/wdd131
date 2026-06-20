@@ -94,7 +94,7 @@ header img {
     font-size: 18px;
 }
 .description {
-    display: hide;
+    display: none;
 }
 
 .social {
