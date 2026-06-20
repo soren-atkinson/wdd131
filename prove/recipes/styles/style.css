@@ -93,6 +93,9 @@ header img {
 .recipe .rating {
     font-size: 18px;
 }
+.description {
+    display: hide;
+}
 
 .social {
     display: flex;
