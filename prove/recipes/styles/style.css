@@ -195,7 +195,7 @@ footer {
 
     .description {
         font-size: 1.1em;
-        display: show;
+        display: block;
         grid-row: 5;
     }
 }
