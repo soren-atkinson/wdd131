@@ -1,0 +1,198 @@
+body {
+    font-family: "Amatic SC", sans-serif;
+    margin: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    align-items: center;
+}
+
+header img {
+    height: 120px;
+    width: auto;
+}
+
+.search {
+    max-width: 500px;
+    margin: 0 auto 10px auto;
+}
+
+.search form {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.search input[type="search"] {
+    flex-grow: 1;
+    padding: 0 12px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.search button {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search button::before {
+    content: "";
+    width: 2px;
+    height: 60%;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+.search button img {
+    height: 20px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 100%;
+    align-items: flex-start;
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.category {
+    padding: 4px 8px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 0.9em;
+    background-color: buttonface;
+    font-family: serif;
+}
+
+.recipe .title {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 1.8em;
+}
+
+.recipe .rating {
+    font-size: 18px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.social img {
+    height: 24px;
+    width: auto;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        margin: 40px;
+    }
+
+    header {
+        font-size: 4em;
+    }
+
+    header img {
+        height: 160px;
+    }
+
+    .search {
+        max-width: 700px;
+        margin: 20px auto;
+    }
+
+    .search form {
+        height: 60px;
+    }
+
+    .search input[type="search"] {
+        font-size: 18px;
+    }
+
+    .search button img {
+        height: 26px;
+    }
+
+    .recipe {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        row-gap: 0px;
+        column-gap: 25px;
+        align-items: start;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 30px;
+    }
+
+    .recipe img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        grid-column: 1;
+        grid-row: 1/7;
+    }
+
+    .recipe > *:not(img) {
+        grid-column: 2;
+    }
+
+    .recipe .title {
+        font-size: 2.4em;
+        margin-top: 0px;
+        grid-row: 3;
+    }
+
+    .recipe .rating {
+        font-size: 22px;
+        grid-row: 4;
+    }
+
+    .category {
+        padding: 4px 8px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        font-size: 0.9em;
+        justify-self: start;
+    }
+
+    .social img {
+        height: 30px;
+    }
+
+    .description {
+        font-size: 1.1em;
+        display: show;
+        grid-row: 5;
+    }
+}
