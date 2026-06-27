@@ -40,37 +40,15 @@
     <h1 class="title">RecipeBook</h1>
   </header>
   <div class="search">
-    <form action="/search-results" method="GET">
-      <input 
-        type="search" 
-        id="site-search" 
-        name="q" 
-        placeholder="Find a recipe..." 
-        aria-label="Search recipes"
-        required>
-      <button type="submit" aria-label="Submit Search">
-        <img src="images/search.svg" alt="">
+    <form onsubmit="return false;">
+      <input id="search" type="search" placeholder="Search recipes">
+      <button id="search-term" type="button">
+        <img src="images/search.svg" alt="Search">
       </button>
     </form>
   </div>
 
-  <div class="recipe">
-    <img src="images/apple-crisp.jpg" alt="Apple Crisp">
-    <span class="category">dessert</span>
-    <h2 class="title">Apple Crisp</h2>
-    <span
-      class="rating"
-      role="img"
-      aria-label="Rating: 4 out of 5 stars"
-    >
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star-empty">☆</span>
-    </span>         
-      <p class="description">This apple crisp recipe ia a simple yet delicous fall dessert that's great served warm with vanilla ice cream</p>
-  </div>
+    <div id="recipes"></div>
    
 <footer>
   <div class="social">
