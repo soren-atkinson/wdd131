@@ -99,7 +99,7 @@ function renderOpponent(poke) {
         </div>
         <div class="sprite-platform" id="opponent-platform">
             <img src="${poke.sprites.front}" alt="${poke.name} front sprite" class="front-sprite">
-            <div class="platform-base">A</div>
+            <img src="images/platform.png" alt="Battle Platform" class="platform-base">
         </div>
     `;
 }
@@ -109,7 +109,7 @@ function renderPlayer(poke) {
     playerDiv.innerHTML = `
         <div class="sprite-platform" id="player-platform">
             <img src="${poke.sprites.back}" alt="${poke.name} back sprite" class="back-sprite">
-            <div class="platform-base">A</div>
+            <img src="images/platform.png" alt="Battle Platform" class="platform-base">
         </div>
         <div class="health-box" id="player-health">
             <p><strong>${poke.name}</strong></p>
