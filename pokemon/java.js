@@ -146,6 +146,11 @@ function opponentSummaryTemplate(move) {
     return html;
 }
 
+const actionButtons = [btn1, btn2, btn3, btn4];
+actionButtons.forEach(function(button) {
+    button.addEventListener('click', handleAttack);
+});
+
 // --- Game Logic Controllers ---
 function handleAttack(event) {
     const clickedId = event.target.id;
@@ -209,7 +214,3 @@ function Battle() {
 
 Battle();
 
-const actionButtons = [btn1, btn2, btn3, btn4];
-actionButtons.forEach(function(button) {
-    button.addEventListener('click', handleAttack);
-});
