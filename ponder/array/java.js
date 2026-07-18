@@ -10,7 +10,7 @@ function showSteps(item){
 };
 
 
-let myList  = document.querySelector('#myList');
+let myList = document.querySelector('#myList');
 const stepsHtml = steps.map(listTemplate);
 function listTemplate(item){
     return `<li>${item}</li>`

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Battle</title>
+    <script src="java.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <div id="battle-screen">
+        
+        <div id="opponent">
+            <div class="health-box" id="opponent-health">
+                <p>Opponent Health</p>
+            </div>
+            <div class="sprite-platform" id="opponent-platform">
+                <div class="front-sprite">Front Sprite</div>
+                <div class="platform-base">A</div>
+            </div>
+        </div>
+
+        <div id="you">
+            <div class="sprite-platform" id="player-platform">
+                <div class="back-sprite">Back Sprite</div>
+                <div class="platform-base">A</div>
+            </div>
+            <div class="health-box" id="player-health">
+                <p>Your Health</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="interface">
+        <div id="text-box">
+            <p>What will you do?</p>
+        </div>
+
+        <div id="menu-box">
+            <button class="menu-btn" id="btn-1">Attack / First Move</button>
+            <button class="menu-btn" id="btn-2">Bag / Second Move</button>
+            <button class="menu-btn" id="btn-3">Pokemon / Third Move</button>
+            <button class="menu-btn" id="btn-4">Run / Fourth Move</button>
+        </div>
+    </div>
+</body>
+</html>
