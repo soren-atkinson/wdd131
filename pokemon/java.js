@@ -1,11 +1,9 @@
-// --- DOM Elements (Declared ONCE globally) ---
 const btn1 = document.querySelector('#btn-1');
 const btn2 = document.querySelector('#btn-2');
 const btn3 = document.querySelector('#btn-3');
 const btn4 = document.querySelector('#btn-4');
 const textBox = document.querySelector('#text-box p');
 
-// --- Pokemon Dataset (Status Moves Removed) ---
 const pokemon = [
     {
         name: "Pikachu",
@@ -84,17 +82,14 @@ const pokemon = [
     }
 ];
 
-// --- Global Battle State ---
 let playerActive;
 let opponentActive;
 
-// --- Helper Functions ---
 function getRandomPokemon() {
     const randomIndex = Math.floor(Math.random() * pokemon.length);
     return pokemon[randomIndex];
 }
 
-// --- Render / Template Engine Functions ---
 function renderOpponent(poke) {
     const opponentDiv = document.querySelector('#opponent');
     opponentDiv.innerHTML = `
@@ -123,7 +118,6 @@ function renderPlayer(poke) {
     `;
 }
 
-// OPTIMIZED: Uses existing variables instead of duplicate document queries
 function renderInterface(poke) {
     textBox.textContent = `What will ${poke.name} do?`;
     btn1.textContent = poke.moves.move1.name;
@@ -201,7 +195,6 @@ function opponentTurn() {
     textBox.innerHTML += opponentSummaryTemplate(selectedMove);
 }
 
-// --- Setup & Initialization ---
 function Battle() {
     playerActive = getRandomPokemon();
     

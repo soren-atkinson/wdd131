@@ -70,7 +70,6 @@ body {
     width: 140px;
     height: 40px; 
     
-    /* FIX: Added ../ to escape the styles folder and find your images folder correctly */
     background-image: url('../images/platform.png'); 
     
     background-size: contain;
