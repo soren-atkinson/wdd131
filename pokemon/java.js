@@ -182,9 +182,9 @@ function opponentTurn() {
         return;
     }
 
-    const moveKeys = ['move1', 'move2', 'move3', 'move4'];
-    const randomKey = moveKeys[Math.floor(Math.random() * moveKeys.length)];
-    const selectedMove = opponentActive.moves[randomKey];
+    const moves = ['move1', 'move2', 'move3', 'move4'];
+    const randomMove = moves[Math.floor(Math.random() * moves.length)];
+    const selectedMove = opponentActive.moves[randomMove];
 
     playerActive.health -= selectedMove.damage;
     if (playerActive.health < 0) {
